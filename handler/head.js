@@ -5,12 +5,6 @@ Promise = require('bluebird')
 Promise.promisifyAll(require('fs'))
 path = require('path')
 
-module.exports.concat = function(index, objective) {
-  return fs.readdirAsync(index)
-    .map(file => fs.readFileAsync(path.join(index, file), 'UTF-8'))
-    .then(intel => fs.writeFileAsync(objective, intel['join']('\x0a')))
-}
-
 module.exports.create = function() {
 
 return(`
@@ -24,7 +18,7 @@ return(`
 @namespace    github.com/${package.author}/${package.name}
 @version      ${package.version}
 @license      ${package.license}
-@preprocessor default
+@preprocessor stylus
 ${fs.readFileSync('./dist/options.css')}  
 ==/UserStyle== */
 

@@ -1,4 +1,4 @@
 {
-  "ext": "js, css",
-  "ignore": ["dist/", "util/"] 
+  "ext": "js, css, sass",
+  "ignore": ["dist/"] 
 } 
