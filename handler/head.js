@@ -15,7 +15,7 @@ return(`
 @preprocessor default
 ==/UserStyle== */
 
-@-moz-document domain("last.fm") {
+@-moz-document domain("*") {
 
     /* Copyright (c) 2017/2020 Trigstur */
     /* https://raw.githubusercontent.com/${package.author}/${package.name}/master/LICENSE */
