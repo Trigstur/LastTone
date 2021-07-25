@@ -1,0 +1,8 @@
+# Compiled output
+/node_modules
+
+# VSCode
+.vscode/*
+
+# Misc
+.env
