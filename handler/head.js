@@ -19,7 +19,7 @@ return(`
 @version      ${package.version}
 @license      ${package.license}
 @preprocessor stylus
-${fs.readFileSync('./dist/options.css')}  
+${fs.readFileSync('./dist/options.sass')}  
 ==/UserStyle== */
 
 @-moz-document domain("last.fm") {

@@ -12,7 +12,7 @@ async function concat(index, objective) {
   }
 
 concat('./src', './dist/pure.sass')  
-let options = concat('./options', './dist/options.css')
+let options = concat('./options', './dist/options.sass')
 
 console.log("[" + name + "] Combined successfully");
 console.log("[" + name + "] Setting up for use...");
@@ -23,23 +23,13 @@ async function build() {
 
 await options;
 
-    fs.readFile('./dist/pure.css', 'UTF-8', (err, data) => {
-        if (err) {
-            console.log(`[!] Error => ${err}`)
-            return
-        }
-
-        console.log(`[${name}] Compacting distribution`);
-
-
-                console.log(`[${name}] Compacted successfully`);
                 console.log(`[${name}] Finishing up...`);
 
-                fs.writeFile('./dist/rel.user.css', `${head.create()} ${fs.readFileSync('./dist/pure.css')} \n \n}`, function(err) {
+                fs.writeFile('./dist/rel.user.css', `${head.create()} ${fs.readFileSync('./dist/pure.sass')} \n \n}`, function(err) {
                     if (err) return console.log(err);})
 
                 console.log(`[${name}] Distribution ready`);
                 var end = Date.now();
                 console.log(`[${name}] Build Complete [${end - start} ms]`);
-            })
+
 }
