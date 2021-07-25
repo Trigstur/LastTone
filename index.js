@@ -1,4 +1,3 @@
-var CleanCSS = require('clean-css');
 var name = " LastTone ";
 var start = Date.now();
 fs = require('fs');
@@ -12,7 +11,7 @@ async function concat(index, objective) {
       .then(intel => fs.writeFileAsync(objective, intel['join']('\x0a')))
   }
 
-concat('./src', './dist/pure.css')  
+concat('./src', './dist/pure.sass')  
 let options = concat('./options', './dist/options.css')
 
 console.log("[" + name + "] Combined successfully");
