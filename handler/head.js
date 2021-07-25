@@ -25,6 +25,7 @@ return(`
 @version      ${package.version}
 @license      ${package.license}
 @preprocessor default
+${fs.readFileSync('./dist/options.css')}  
 ==/UserStyle== */
 
 @-moz-document domain("last.fm") {

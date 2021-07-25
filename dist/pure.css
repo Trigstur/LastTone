@@ -1,7 +1,6 @@
 :root {
    --wrapper : #212121;
    --wrapperheading : #fff;
-
 }
 #mantle_skin, .adaptive-skin-wrapper, .content-top, .content-top-inner-wrap {
     background: var(--wrapper);

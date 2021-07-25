@@ -10,6 +10,14 @@
 @version      0.0.1
 @license      GPL-3.0-or-later
 @preprocessor default
+@var select fontBkgd "Background" {
+    "near_black:Near Black": "#222",
+    "near_white:Near White": "#ddd"
+}
+@var select fontBkgd "Background" {
+    "near_black:Near Black": "#222",
+    "near_white:Near White": "#ddd"
+}     
 ==/UserStyle== */
 
 @-moz-document domain("last.fm") {
@@ -17,6 +25,6 @@
     /* Copyright (c) 2017/2020 Trigstur */
     /* https://raw.githubusercontent.com/Trigstur/lasttone/master/LICENSE */
 
-  
+ :root{--wrapper:#212121;--wrapperheading:#fff}#mantle_skin,.adaptive-skin-wrapper,.content-top,.content-top-inner-wrap{background:var(--wrapper)}.navlist-item{color:var(--wrapperheading)} 
  
 }

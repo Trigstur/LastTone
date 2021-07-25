@@ -11,6 +11,7 @@ return new Promise(function() {
     console.log("[" + name + "] Combining resources ...");
 
     head.concat('./src', './dist/pure.css')
+    head.concat('./options', './dist/options.css')
 
     console.log("[" + name + "] Combined successfully");
 
