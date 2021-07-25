@@ -1,4 +1,16 @@
+// This ( The Head ) contains some of the handlers used in our building tool
+
 var package = require('../package.json');
+Promise = require('bluebird')
+Promise.promisifyAll(require('fs'))
+path = require('path')
+
+module.exports.concat = function(index, objective) {
+  return fs.readdirAsync(index)
+    .map(file => fs.readFileAsync(path.join(index, file), 'UTF-8'))
+    .then(intel => fs.writeFileAsync(objective, intel['join']('\x0a')))
+}
+
 module.exports.create = function() {
 
 return(`

@@ -22,7 +22,8 @@
     "LastFM"
   ],
   "dependencies": {
-    "child_process": "^1.0.2"
+    "bluebird": "^3.7.2",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "clean-css": "^5.1.3",
