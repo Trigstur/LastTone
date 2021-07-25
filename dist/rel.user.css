@@ -12,11 +12,11 @@
 @preprocessor default
 ==/UserStyle== */
 
-@-moz-document domain("*") {
+@-moz-document domain("last.fm") {
 
     /* Copyright (c) 2017/2020 Trigstur */
     /* https://raw.githubusercontent.com/Trigstur/lasttone/master/LICENSE */
 
-  
+ :root{--wrapper:#fff} 
  
 }
