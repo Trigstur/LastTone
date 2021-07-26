@@ -30,6 +30,6 @@ await options;
 
                 console.log(`[${name}] Distribution ready`);
                 var end = Date.now();
-                console.log(`[${name}] Build Complete [${end - start} ms]`);
+                console.log(`[${name}] Build Complete [${end - start} ms]`);           
 
 }

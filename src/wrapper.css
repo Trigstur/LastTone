@@ -1,7 +1,10 @@
 #mantle_skin, .adaptive-skin-wrapper, .content-top, .content-top-inner-wrap {
     background: var(--wrapper);
  }
-
  .navlist-item {
     color: var(--wrapperheading);
+}
+.container.page-content {
+    background: var(--container);
+    color: var(--containercontent);
 }

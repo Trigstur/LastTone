@@ -1,0 +1,14 @@
+.top-bar, .player-bar {
+    background: var(--topbar);
+    color: var(--topbartext)
+}
+.header--overview {
+    background: var(--semiheader);
+    padding-bottom: 15px;
+}
+.header-metadata .header-metadata-title, .content-top-header {
+    color: var(--semiheaderheader);
+}
+.header-metadata .header-metadata-display p a, .header .tasteometer-body, .header .tasteometer-body p {
+        color: var(--semiheaderinner);
+}

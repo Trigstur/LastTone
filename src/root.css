@@ -1,4 +1,21 @@
 :root {
-   --wrapper : #212121;
-   --wrapperheading : #fff;
-}
+    --topbar : #172a32; 
+    --topbartext : #fbf5ef;
+     
+    --wrapper : #0e1c26;
+    --wrapperheading : #fbf5ef;
+     
+     --semiheader : #21373f;
+     --semiheaderheader : #fbf5ef;
+     --semiheaderinner : #fbf5ef;
+     
+     --container: #13232c;
+     --containercontent : #fbf5ef;
+     
+     --charlist: #0e1c26;
+     --charttext: #fff;
+     --charttime: #fff;
+     
+     --nowplaying: #fff;
+     --nowplayingtext: #172a32;
+ }
