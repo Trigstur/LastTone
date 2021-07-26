@@ -1,0 +1,27 @@
+.highcharts-background {
+    fill: var(--container)
+}
+.highcharts-plot-band {
+    fill: var(--wrapper);
+}
+.highcharts-graph {
+    stroke: var(--wrapperheading);
+}
+.highcharts-area {
+    fill: transparent;
+}
+.highcharts-series.highcharts-series-0.highcharts-column-series.highcharts-color-undefined.highcharts-tracker .highcharts-point {
+    fill: var(--featurefocus);
+}
+.highcharts-series.highcharts-series-1.highcharts-column-series.highcharts-color-undefined.highcharts-tracker .highcharts-point {
+    fill: var(--feauturecolor);
+}
+.scrobble-stats-graph .user-dashboard-legend-item--current::before {
+    background: var(--feauturecolor);
+}
+.scrobble-stats-graph .user-dashboard-legend-item--comparison::before {
+    background: var(--featurefocus);
+}
+.highcharts-point {
+    fill: var(--feauturecolor);
+}

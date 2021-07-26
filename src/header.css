@@ -2,7 +2,7 @@
     background: var(--topbar);
     color: var(--topbartext)
 }
-.header--overview {
+.header--overview, .container {
     background: var(--semiheader);
     padding-bottom: 15px;
 }

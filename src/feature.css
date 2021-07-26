@@ -1,0 +1,38 @@
+.library-controls .secondary-nav-item--overview .secondary-nav-item-link.secondary-nav-item-link--active::before, .library-controls .secondary-nav-item--overview .secondary-nav-item-link:focus::before, .library-controls .secondary-nav-item--overview .secondary-nav-item-link:hover::before {
+    background-position: 0 0px;
+}
+.library-controls .secondary-nav-item--tracks .secondary-nav-item-link.secondary-nav-item-link--active::before, .library-controls .secondary-nav-item--tracks .secondary-nav-item-link:focus::before, .library-controls .secondary-nav-item--tracks .secondary-nav-item-link:hover::before {
+    background-position: -108px 0px;
+}
+.library-controls .secondary-nav-item--artists .secondary-nav-item-link.secondary-nav-item-link--active::before, .library-controls .secondary-nav-item--artists .secondary-nav-item-link:focus::before, .library-controls .secondary-nav-item--artists .secondary-nav-item-link:hover::before {
+    background-position: -36px 0px;
+}
+.library-controls .secondary-nav-item--albums .secondary-nav-item-link.secondary-nav-item-link--active::before, .library-controls .secondary-nav-item--albums .secondary-nav-item-link:focus::before, .library-controls .secondary-nav-item--albums .secondary-nav-item-link:hover::before {
+    background-position: -72px 0px;
+}
+.js .date-range-picker-button::before {
+ display: none;   
+}
+.js .date-range-picker-button .date-range-picker-button-inner::before {
+    content: "▼";
+    background-position: 0 -36px;
+}
+.tasteometer-compat-super .tasteometer-compat-colour, .library-controls .secondary-nav .secondary-nav-item-link--active, .library-controls .secondary-nav .secondary-nav-item-link--active:focus, .library-controls .secondary-nav .secondary-nav-item-link--active:hover, .secondary-nav-item-link:hover, .js .date-range-picker-button,  {
+    fill: var(--feauturecolor);
+    color: var(--feauturecolor);
+}
+.chartlist-count-bar-slug {
+    background-color: var(--featurefocus);
+    color: var(--feauturecolor);
+}
+.secondary-nav-item-link--active::after, .btn-primary, .features-footer-category, a.secondary-nav-item-link:hover::after, a.secondary-nav-item-link:focus::after, .catalogue-tags .tag a, .catalogue-tags .tags-add, .catalogue-tags .tags-add-cta, .chartlist-count-bar-value {
+background-color: var(--featurefocus);
+color: var(--feauturecolor);
+}
+body:not([data-whatinput="touch"]) .btn-primary:hover, .catalogue-tags .tag a, .catalogue-tags .tags-add, .catalogue-tags .tags-add-cta{
+background-color: var(--featurefocus);
+color: var(--feauturecolor);
+}
+a {
+    color: var(--linkcolor);
+}

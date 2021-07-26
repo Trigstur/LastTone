@@ -1,3 +1,30 @@
+.highcharts-background {
+    fill: var(--container)
+}
+.highcharts-plot-band {
+    fill: var(--wrapper);
+}
+.highcharts-graph {
+    stroke: var(--wrapperheading);
+}
+.highcharts-area {
+    fill: transparent;
+}
+.highcharts-series.highcharts-series-0.highcharts-column-series.highcharts-color-undefined.highcharts-tracker .highcharts-point {
+    fill: var(--featurefocus);
+}
+.highcharts-series.highcharts-series-1.highcharts-column-series.highcharts-color-undefined.highcharts-tracker .highcharts-point {
+    fill: var(--feauturecolor);
+}
+.scrobble-stats-graph .user-dashboard-legend-item--current::before {
+    background: var(--feauturecolor);
+}
+.scrobble-stats-graph .user-dashboard-legend-item--comparison::before {
+    background: var(--featurefocus);
+}
+.highcharts-point {
+    fill: var(--feauturecolor);
+}
 if logoEnable {
     .masthead-logo {
         if logoEnable {
@@ -5,11 +32,50 @@ if logoEnable {
         } 
       }
 }
+.library-controls .secondary-nav-item--overview .secondary-nav-item-link.secondary-nav-item-link--active::before, .library-controls .secondary-nav-item--overview .secondary-nav-item-link:focus::before, .library-controls .secondary-nav-item--overview .secondary-nav-item-link:hover::before {
+    background-position: 0 0px;
+}
+.library-controls .secondary-nav-item--tracks .secondary-nav-item-link.secondary-nav-item-link--active::before, .library-controls .secondary-nav-item--tracks .secondary-nav-item-link:focus::before, .library-controls .secondary-nav-item--tracks .secondary-nav-item-link:hover::before {
+    background-position: -108px 0px;
+}
+.library-controls .secondary-nav-item--artists .secondary-nav-item-link.secondary-nav-item-link--active::before, .library-controls .secondary-nav-item--artists .secondary-nav-item-link:focus::before, .library-controls .secondary-nav-item--artists .secondary-nav-item-link:hover::before {
+    background-position: -36px 0px;
+}
+.library-controls .secondary-nav-item--albums .secondary-nav-item-link.secondary-nav-item-link--active::before, .library-controls .secondary-nav-item--albums .secondary-nav-item-link:focus::before, .library-controls .secondary-nav-item--albums .secondary-nav-item-link:hover::before {
+    background-position: -72px 0px;
+}
+.js .date-range-picker-button::before {
+ display: none;   
+}
+.js .date-range-picker-button .date-range-picker-button-inner::before {
+    content: "▼";
+    background-position: 0 -36px;
+}
+.tasteometer-compat-super .tasteometer-compat-colour, .library-controls .secondary-nav .secondary-nav-item-link--active, .library-controls .secondary-nav .secondary-nav-item-link--active:focus, .library-controls .secondary-nav .secondary-nav-item-link--active:hover, .secondary-nav-item-link:hover, .js .date-range-picker-button,  {
+    fill: var(--feauturecolor);
+    color: var(--feauturecolor);
+}
+.chartlist-count-bar-slug {
+    background-color: var(--featurefocus);
+    color: var(--feauturecolor);
+}
+.secondary-nav-item-link--active::after, .btn-primary, .features-footer-category, a.secondary-nav-item-link:hover::after, a.secondary-nav-item-link:focus::after, .catalogue-tags .tag a, .catalogue-tags .tags-add, .catalogue-tags .tags-add-cta, .chartlist-count-bar-value {
+background-color: var(--featurefocus);
+color: var(--feauturecolor);
+}
+body:not([data-whatinput="touch"]) .btn-primary:hover, .catalogue-tags .tag a, .catalogue-tags .tags-add, .catalogue-tags .tags-add-cta{
+background-color: var(--featurefocus);
+color: var(--feauturecolor);
+}
+a {
+    color: var(--linkcolor);
+}
+
 .top-bar, .player-bar {
     background: var(--topbar);
     color: var(--topbartext)
 }
-.header--overview {
+.header--overview, .container {
     background: var(--semiheader);
     padding-bottom: 15px;
 }
@@ -23,7 +89,11 @@ if logoEnable {
 :root {
     --topbar : #172a32; 
     --topbartext : #fbf5ef;
-     
+      
+    --feauturecolor: #27666c; 
+    --featurefocus: #c7e2e3; 
+    --linkcolor: #457b9d; 
+    
     --wrapper : #0e1c26;
     --wrapperheading : #fbf5ef;
      
@@ -69,13 +139,13 @@ tr:last-of-type {
     padding: 5px;
     border-radius: 50px;
 }
-#mantle_skin, .adaptive-skin-wrapper, .content-top, .content-top-inner-wrap {
+#mantle_skin, .adaptive-skin-wrapper, .content-top, .content-top-inner-wrap, .header--overview, .header--sub-page {
     background: var(--wrapper);
  }
  .navlist-item {
     color: var(--wrapperheading);
 }
-.container.page-content {
+.container.page-content, .section-with-separator::after {
     background: var(--container);
     color: var(--containercontent);
 }

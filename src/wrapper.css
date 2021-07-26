@@ -1,10 +1,10 @@
-#mantle_skin, .adaptive-skin-wrapper, .content-top, .content-top-inner-wrap {
+#mantle_skin, .adaptive-skin-wrapper, .content-top, .content-top-inner-wrap, .header--overview, .header--sub-page {
     background: var(--wrapper);
  }
  .navlist-item {
     color: var(--wrapperheading);
 }
-.container.page-content {
+.container.page-content, .section-with-separator::after {
     background: var(--container);
     color: var(--containercontent);
 }
