@@ -1,7 +1,7 @@
 {
   "name": "lasttone",
-  "version": "0.0.4",
-  "description": "Something in the works",
+  "version": "0.0.5",
+  "description": "LastFM magic :3",
   "main": "index.js",
   "author": "Trigstur",
   "maintainers": [

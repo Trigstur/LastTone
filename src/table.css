@@ -1,8 +1,8 @@
 tr:nth-child(1) {
-    border-radius: 25px 25px 0px 0px !important;
+    border-radius: BorRad BorRad 0px 0px !important;
 }
-tr:last-of-type {
-    border-radius: 0px 0px 25px 25px !important;
+tr:last-of-type {  
+    border-radius: 0px 0px BorRad BorRad !important;
 }
 .chartlist-row:hover {
     background-color: transparent;
@@ -24,5 +24,5 @@ tr:last-of-type {
 }
 .chartlist, .chartlist tbody, .chartlist td, .chartlist thead, .chartlist tr {
     padding: 5px;
-    border-radius: 50px;
+    border-radius: BorRad;
 }

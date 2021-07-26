@@ -2,14 +2,42 @@
 /* ==UserStyle==
 @name         lasttone
 @author       Trigstur <contact@trigstur.nl> (trigstur.nl)
-@description  Something in the works
+@description  LastFM magic :3
 @homepageURL  https://github.com/Trigstur/lasttone
 @supportURL   https://github.com/Trigstur/lasttone/issues
 @namespace    github.com/Trigstur/lasttone
-@version      0.0.4
+@version      0.0.5
 @license      GPL-3.0-or-later
 @preprocessor stylus
-@var checkbox logoEnable "Toggle the header logo" 1  
+@var checkbox logoEnable "Toggle the header logo" 1
+@var range  BorRad  "Border Radius" [50, 0, 100, 1, "px"]
+@var select theme "Theme" ["default:Default theme", "custom:Custom theme"]
+
+
+@var color  wrapper  "Wrapper color"   #002123 
+@var color  wrapperheading  "Wrapper Heading"   #fbf5ef 
+
+@var color topbar "Topbar" #002123
+@var color topbartext "Topbar text" #fbf5ef
+
+@var color feauturecolor "Feature color" #012d2d
+@var color featurefocus "Feature focus" #07e1a5
+@var color linkcolor "Link color" #ffffff
+
+@var color  semiheader  "Header"   #002123 
+@var color  semiheaderheader  "Header text"   #fbf5ef 
+@var color  semiheaderinner  "Header Inner"   #fbf5ef 
+
+@var color  container  "Container"   #012d2d 
+@var color  containercontent  "Contaienr content"   #fbf5ef 
+
+@var color nowplaying "Now playing" #002123
+@var color nowplayingtext "Now playing text" #fbf5ef
+
+@var color charlist "Charlist" #002123
+@var color chartext "Chartext" #fbf5ef
+@var color charttime "Chartime" #fbf5ef
+  
 ==/UserStyle== */
 
 @-moz-document domain("last.fm") {
@@ -61,10 +89,61 @@
 }
 if logoEnable {
     .masthead-logo {
-        if logoEnable {
          display: none 
         } 
-      }
+}
+if theme == default {
+:root {
+    --topbar : #172a32; 
+    --topbartext : #fbf5ef;
+      
+    --feauturecolor: #27666c; 
+    --featurefocus: #c7e2e3; 
+    --linkcolor: #457b9d; 
+    
+    --wrapper : #0e1c26;
+    --wrapperheading : #fbf5ef;
+     
+     --semiheader : #21373f;
+     --semiheaderheader : #fbf5ef;
+     --semiheaderinner : #fbf5ef;
+     
+     --container: #13232c;
+     --containercontent : #fbf5ef;
+     
+     --charlist: #0e1c26;
+     --charttext: #fff;
+     --charttime: #fff;
+     
+     --nowplaying: #fff;
+     --nowplayingtext: #172a32;
+ }
+} else if theme == custom {
+  :root {
+    --topbar : topbar; 
+    --topbartext : topbartext;
+      
+    --feauturecolor: feauturecolor; 
+    --featurefocus: featurefocus; 
+    --linkcolor: linkcolor; 
+    
+    --wrapper : wrapper;
+    --wrapperheading : wrapperheading;
+     
+     --semiheader : semiheader;
+     --semiheaderheader : semiheaderheader;
+     --semiheaderinner : semiheaderinner;
+     
+     --container: container;
+     --containercontent : containercontent;
+     
+     --charlist: charlist;
+     --charttext: charttext;
+     --charttime: charttime;
+     
+     --nowplaying: nowplaying;
+     --nowplayingtext: nowplayingtext;
+ }  
 }
 .library-controls .secondary-nav-item--overview .secondary-nav-item-link.secondary-nav-item-link--active::before, .library-controls .secondary-nav-item--overview .secondary-nav-item-link:focus::before, .library-controls .secondary-nav-item--overview .secondary-nav-item-link:hover::before {
     background-position: 0 0px;
@@ -117,6 +196,10 @@ a:focus .chartlist-count-bar-slug, a:hover .chartlist-count-bar-slug {
     background: var(--topbar);
     color: var(--topbartext)
 }
+.masthead-nav .masthead-nav-item a {
+    margin-left: 20px;
+    color: var(--topbartext);
+}
 .header--overview, .container {
     background: var(--semiheader);
     padding-bottom: 15px;
@@ -145,36 +228,11 @@ a:focus .chartlist-count-bar-slug, a:hover .chartlist-count-bar-slug {
     background: linear-gradient(90deg,var(--feauturecolor) 0,rgba(207,43,43,0) 73%);
     border-left: 2px solid var(--containercontent);
 }
-:root {
-    --topbar : #172a32; 
-    --topbartext : #fbf5ef;
-      
-    --feauturecolor: #27666c; 
-    --featurefocus: #c7e2e3; 
-    --linkcolor: #457b9d; 
-    
-    --wrapper : #0e1c26;
-    --wrapperheading : #fbf5ef;
-     
-     --semiheader : #21373f;
-     --semiheaderheader : #fbf5ef;
-     --semiheaderinner : #fbf5ef;
-     
-     --container: #13232c;
-     --containercontent : #fbf5ef;
-     
-     --charlist: #0e1c26;
-     --charttext: #fff;
-     --charttime: #fff;
-     
-     --nowplaying: #fff;
-     --nowplayingtext: #172a32;
- }
 tr:nth-child(1) {
-    border-radius: 25px 25px 0px 0px !important;
+    border-radius: BorRad BorRad 0px 0px !important;
 }
-tr:last-of-type {
-    border-radius: 0px 0px 25px 25px !important;
+tr:last-of-type {  
+    border-radius: 0px 0px BorRad BorRad !important;
 }
 .chartlist-row:hover {
     background-color: transparent;
@@ -196,7 +254,7 @@ tr:last-of-type {
 }
 .chartlist, .chartlist tbody, .chartlist td, .chartlist thead, .chartlist tr {
     padding: 5px;
-    border-radius: 50px;
+    border-radius: BorRad;
 }
 #mantle_skin, .adaptive-skin-wrapper, .content-top, .content-top-inner-wrap, .header--overview, .header--sub-page {
     background: var(--wrapper);

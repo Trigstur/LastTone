@@ -2,6 +2,10 @@
     background: var(--topbar);
     color: var(--topbartext)
 }
+.masthead-nav .masthead-nav-item a {
+    margin-left: 20px;
+    color: var(--topbartext);
+}
 .header--overview, .container {
     background: var(--semiheader);
     padding-bottom: 15px;
