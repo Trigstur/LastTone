@@ -25,3 +25,18 @@
 .highcharts-point {
     fill: var(--feauturecolor);
 }
+.listening-report-promo {
+    background-color: var(--charlist);
+}
+.listening-report-promo:hover, .listening-report-promo:focus, .listening-report-promo:hover {
+    background-color: var(--container);
+}
+.tag-label {
+    background-image: linear-gradient(135deg,var(--featurefocus),var(--feauturecolor));
+}
+.user-dashboard-comparison--down {
+    color: var(--featurefocus);
+}
+.user-dashboard-comparison--down::before {
+    filter: grayscale(100%);
+}

@@ -1,0 +1,17 @@
+.listening-report-brick {
+    border: transparent;
+    margin-top: 15px;
+}
+.listening-report-brick-col.listening-report-brick-item {
+    color: var(--wrapperheading);
+    transition: 1s;
+}
+.listening-report-brick:focus, .listening-report-brick:hover {
+    border-left: solid 2px;
+    box-shadow: 0 3px 9px 0 #eee0;
+    background: var(--wrapper);
+}
+.listening-report-brick .listening-report-brick-inner.listening-report-brick-inner--highlight::before {
+    background: linear-gradient(90deg,var(--feauturecolor) 0,rgba(207,43,43,0) 73%);
+    border-left: 2px solid var(--containercontent);
+}

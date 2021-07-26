@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/Trigstur/lasttone
 @supportURL   https://github.com/Trigstur/lasttone/issues
 @namespace    github.com/Trigstur/lasttone
-@version      0.0.3
+@version      0.0.4
 @license      GPL-3.0-or-later
 @preprocessor stylus
 @var checkbox logoEnable "Toggle the header logo" 1  
@@ -43,6 +43,21 @@
 }
 .highcharts-point {
     fill: var(--feauturecolor);
+}
+.listening-report-promo {
+    background-color: var(--charlist);
+}
+.listening-report-promo:hover, .listening-report-promo:focus, .listening-report-promo:hover {
+    background-color: var(--container);
+}
+.tag-label {
+    background-image: linear-gradient(135deg,var(--featurefocus),var(--feauturecolor));
+}
+.user-dashboard-comparison--down {
+    color: var(--featurefocus);
+}
+.user-dashboard-comparison--down::before {
+    filter: grayscale(100%);
 }
 if logoEnable {
     .masthead-logo {
@@ -89,7 +104,15 @@ color: var(--feauturecolor);
 a {
     color: var(--linkcolor);
 }
-
+a:focus .chartlist-count-bar-slug, a:hover .chartlist-count-bar-slug {
+    background-color: var(--featurefocus);
+}
+.user-dashboard-section-header::after {
+    background-color: var(--feauturecolor);    
+}
+.features-teaser-category {
+    color: var(--feauturecolor);    
+}
 .top-bar, .player-bar {
     background: var(--topbar);
     color: var(--topbartext)
@@ -105,6 +128,23 @@ a {
         color: var(--semiheaderinner);
 }
 
+.listening-report-brick {
+    border: transparent;
+    margin-top: 15px;
+}
+.listening-report-brick-col.listening-report-brick-item {
+    color: var(--wrapperheading);
+    transition: 1s;
+}
+.listening-report-brick:focus, .listening-report-brick:hover {
+    border-left: solid 2px;
+    box-shadow: 0 3px 9px 0 #eee0;
+    background: var(--wrapper);
+}
+.listening-report-brick .listening-report-brick-inner.listening-report-brick-inner--highlight::before {
+    background: linear-gradient(90deg,var(--feauturecolor) 0,rgba(207,43,43,0) 73%);
+    border-left: 2px solid var(--containercontent);
+}
 :root {
     --topbar : #172a32; 
     --topbartext : #fbf5ef;

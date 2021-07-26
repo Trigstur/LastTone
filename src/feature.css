@@ -36,3 +36,12 @@ color: var(--feauturecolor);
 a {
     color: var(--linkcolor);
 }
+a:focus .chartlist-count-bar-slug, a:hover .chartlist-count-bar-slug {
+    background-color: var(--featurefocus);
+}
+.user-dashboard-section-header::after {
+    background-color: var(--feauturecolor);    
+}
+.features-teaser-category {
+    color: var(--feauturecolor);    
+}
